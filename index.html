@@ -39,6 +39,14 @@
 	.font-weight-min {
 		font-weight: 100;
 	}
+
+	.btn-border-radius-sm {
+		border-radius: 8px;
+	}
+
+	.btn-border-radius-xxl {
+		border-radius: 32px;
+	}
 </style>
 
 <body>
@@ -47,22 +55,22 @@
 	<div class="w3-top">
 		<div class="w3-bar w3-white w3-card" id="myNavbar">
 			<a href="#home" class="w3-bar-item w3-button w3-wide">
-                <img src="/assets/img/logo/file_png_favicon-black.png" alt="Parcely logo" style="width: 40px !important; height: 40px !important;">
+				<img src="/assets/img/logo/file_png_favicon-black.png" alt="Parcely logo" style="width: 40px !important; height: 40px !important;">
             </a>
-			<!-- Right-sided navbar links -->
-			<div class="w3-right w3-hide-small">
-				<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> About</a>
-				<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
-				<!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
-				<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> Solutions</a>
-				<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
-			</div>
-			<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+				<!-- Right-sided navbar links -->
+				<div class="w3-right w3-hide-small">
+					<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> About</a>
+					<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+					<!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
+					<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> Solutions</a>
+					<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+				</div>
+				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-				onclick="w3_open()">
-				<i class="fa fa-bars"></i>
-			</a>
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+					onclick="w3_open()">
+					<i class="fa fa-bars"></i>
+				</a>
 		</div>
 	</div>
 
@@ -85,7 +93,7 @@
 			<span class="w3-xxlarge w3-hide-large w3-hide-medium">Simple real-time shipping</span><br>
 			<span class="w3-xlarge font-weight-min" style="background-color: rgba(78, 78, 78, 1);padding: 10px;">Parcely is transforming logistics with IoT, real-time data and analytics</span>
 			<p><a href="#about"
-					class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+					class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off btn-border-radius-xxl"
 					style="background-color: #322073!important; color: white!important;">
 					Learn more</a></p>
 		</div>
@@ -185,7 +193,8 @@
 							<p class="w3-opacity">Founder</p>
 							<p>Defining the mission, vision and purpose of a data-driven, human-centered logistics
 								platform. Leading the growth of Parcely as product and organization.</p>
-							<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>
+							<br>
+							<!--<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>-->
 							</p>
 						</div>
 					</div>
@@ -198,7 +207,8 @@
 							<p class="w3-opacity">Hardware Engineering Lead</p>
 							<p>Develop our Hardware Engineering practice and lead delivery of our IoT Smart Shipping
 								Module while attracting world-class hardware engineers.</p>
-							<p><button disabled=true class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>
+							<!--<p><button disabled=true class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>-->
+							<br>
 							</p>
 						</div>
 					</div>
@@ -211,7 +221,8 @@
 							<p class="w3-opacity">Sofware Engineering Lead</p>
 							<p>Build our development lifecycle from terminal to production on our global
 								platform; grow our software engineering ranks by leading recruitment efforts.</p>
-							<p><button disabled=true class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>
+							<!--<p><button disabled=true class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>-->
+							<br>
 							</p>
 						</div>
 					</div>
@@ -222,9 +233,10 @@
 						<div class="w3-container">
 							<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 							<p class="w3-opacity">Marketing & Sales Lead</p>
-							<p>You&apos;ll help build our go-to-market strategy, launch our sales funnel and communicate
+							<p>Develop and bootstrap our go-to-market strategy, launch our sales funnel and communicate
 								the Parcely value proposition in the marketplace.</p>
-							<p><button disabled=true class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>
+							<!--<p><button disabled=true class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>-->
+							<br>
 							</p>
 						</div>
 					</div>
@@ -342,7 +354,7 @@
 							<span class="w3-opacity">per box</span>
 						</li>
 						<li class="w3-light-grey w3-padding-24">
-							<button disabled=true class="w3-button w3-black w3-padding-large">Join Waitlist</button>
+							<button disabled=true class="w3-button w3-black w3-padding-large btn-border-radius-xxl">Join Waitlist</button>
 						</li>
 					</ul>
 				</div>
@@ -360,7 +372,7 @@
 							<span class="w3-opacity">per year</span>
 						</li>
 						<li class="w3-light-grey w3-padding-24">
-							<button disabled=true class="w3-button w3-black w3-padding-large">Join Waitlist</button>
+							<button disabled=true class="w3-button w3-black w3-padding-large btn-border-radius-xxl">Join Waitlist</button>
 						</li>
 					</ul>
 				</div>
@@ -377,7 +389,7 @@
 							<span class="w3-opacity">per year</span>
 						</li>
 						<li class="w3-light-grey w3-padding-24">
-							<button disabled=true class="w3-button w3-black w3-padding-large">Contact Us</button>
+							<button disabled=true class="w3-button w3-black w3-padding-large btn-border-radius-xxl">Contact Us</button>
 						</li>
 					</ul>
 				</div>
@@ -398,7 +410,7 @@
 							<!--<p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>-->
 							<textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
 							</br>
-							<button class="w3-button w3-black" type="submit">
+							<button class="w3-button w3-black btn-border-radius-xxl">
           <i class="fa fa-paper-plane"></i> Send Message
         </button>
 						</p>
@@ -410,7 +422,9 @@
 
 		<!-- Footer -->
 		<footer class="w3-center w3-black w3-padding-64">
-			<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+			<a href="#home"
+				class="w3-button w3-light-grey btn-border-radius-xxl"><i class="fa fa-arrow-up w3-margin-right"></i>To
+				the top</a>
 			<div class="w3-xlarge w3-section">
 				<!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -424,29 +438,42 @@
 
 		<script>
 			// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
 
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
+      function w3_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+        } else {
+          mySidebar.style.display = 'block';
+        }
+      }
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+      // Close the sidebar with the close button
+      function w3_close() {
+          mySidebar.style.display = "none";
+      }
+
+      //Form submission logic
+      function onClickFormSend(e) {
+        const nameFieldValue = document.querySelector("#user-name");
+        const emailFieldValue = document.querySelector("#user-email-address");
+        const messageFieldValue = document.querySelector("user-message");
+        
+
+      }
+
+      const sendMessageButton = document.querySelector("#send-message-button");
+      sendMessageButton.addEventListener("click", onClickFormSend);
+
 		</script>
 
 </body>
