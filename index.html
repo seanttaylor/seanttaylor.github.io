@@ -463,19 +463,32 @@
       }
 
       //Form submission logic
-      function onClickFormSend(e) {
-        const nameFieldValue = document.querySelector("#user-name");
-        const emailFieldValue = document.querySelector("#user-email-address");
-        const messageFieldValue = document.querySelector("user-message");
+      async function onClickFormSend(e) {
+        const messageEndpoint = "";
+        const nameFieldValue = document.querySelector("#user-name").value;
+        const emailFieldValue = document.querySelector("#user-email-address").value;
+        const messageFieldValue = document.querySelector("user-message").value;
+        const messagePayload = {
+            name: nameFieldValue,
+            email: emailFieldValue,
+            body: messageFieldValue
+        };
         
+        try {
+            await fetch(messageEndpoint, {
+                method: "POST",
+                body: JSON.stringify(messagePayload)
+            });
+        } catch(e) {
+            console.error(e);
+        }
 
       }
 
       const sendMessageButton = document.querySelector("#send-message-button");
       sendMessageButton.addEventListener("click", onClickFormSend);
 
-		</script>
+	</script>
 
 </body>
-
 </html>
