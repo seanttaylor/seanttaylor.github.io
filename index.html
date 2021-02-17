@@ -398,23 +398,32 @@
 
 		<!-- Contact Section -->
 		<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-			<h2 class="w3-center">Contact</h2>
-			<p class="w3-center w3-xlarge font-weight-min">Let's build something together. Send us a message:</p>
+			<h2 class="w3-center">Let's build something together. Send us a message.</h2>
+			<p class="w3-center w3-xlarge font-weight-min"></p>
 			<div style="margin-top:48px">
 				<!--<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Brooklyn, NY US</p>
 				<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: hello@parcley.us</p>-->
 				<br>
-				<form action="/action_page.php" target="_blank">
-					<p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-						<p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-							<!--<p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>-->
-							<textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
+				<div class="w3-center">
+					<a href="mailto:hello@parcely.us">
+						<button id="send-message-button" class="w3-button w3-black btn-border-radius-xxl" style=
+            "width: 280px !important; height: 64px !important";>
+              <i class="fa fa-paper-plane"></i> Contact Us
+            </button>
+                    </a>
+				</div>
+
+				<!--<form action="/action_page.php" target="_blank">
+					<p><input id="user-name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+						<p><input id="user-email-address" class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+							<p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+							<textarea id="user-message" class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
 							</br>
-							<button class="w3-button w3-black btn-border-radius-xxl">
+							<button id="send-message-button" class="w3-button w3-black btn-border-radius-xxl">
           <i class="fa fa-paper-plane"></i> Send Message
         </button>
-						</p>
-				</form>
+				</p>
+				</form>-->
 				<!-- Image of location/map -->
 				<!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
 			</div>
@@ -462,33 +471,8 @@
           mySidebar.style.display = "none";
       }
 
-      //Form submission logic
-      async function onClickFormSend(e) {
-        const messageEndpoint = "";
-        const nameFieldValue = document.querySelector("#user-name").value;
-        const emailFieldValue = document.querySelector("#user-email-address").value;
-        const messageFieldValue = document.querySelector("user-message").value;
-        const messagePayload = {
-            name: nameFieldValue,
-            email: emailFieldValue,
-            body: messageFieldValue
-        };
-        
-        try {
-            await fetch(messageEndpoint, {
-                method: "POST",
-                body: JSON.stringify(messagePayload)
-            });
-        } catch(e) {
-            console.error(e);
-        }
-
-      }
-
-      const sendMessageButton = document.querySelector("#send-message-button");
-      sendMessageButton.addEventListener("click", onClickFormSend);
-
-	</script>
+		</script>
 
 </body>
+
 </html>
