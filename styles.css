@@ -1,0 +1,49 @@
+body,
+h1,
+h5 {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.bgimg {
+  background-color: #0c1d36;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  vertical-align: middle;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-header {
+  background-color: #0c1d36;
+  color: #fff;
+}
+
+.w3-btn,
+.w3-button {
+  font-size: 42px;
+}
+
+@media (max-width: 500px) {
+  .w3-display-middle.w3-jumbo {
+    width: 300px;
+  }
+
+  .w3-btn,
+  .w3-button {
+    font-size: 28px;
+  }
+
+  .w3-display-middle {
+    top: 42%;
+  }
+}
