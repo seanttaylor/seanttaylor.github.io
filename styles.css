@@ -33,6 +33,7 @@ html {
   font-size: 42px;
 }
 
+
 @media (max-width: 500px) {
   .w3-display-middle.w3-jumbo {
     width: 300px;
@@ -46,4 +47,64 @@ html {
   .w3-display-middle {
     top: 42%;
   }
+}
+
+/* similar to Samsung Galaxy S8+*/
+@media (min-width: 360px) {
+  p.w3-xlarge {
+    font-size: 18px!important;
+  }
+
+  p.w3-large {
+    font-size: 16px!important;
+  }
+
+}
+
+/* similar to iPhone SE */
+@media (min-width: 375px) {
+  p.w3-xlarge {
+    font-size: 18px!important;
+  }
+
+  p.w3-large {
+    font-size: 16px!important;
+  }
+
+}
+
+/* similar to iPad mini */
+@media (min-width: 768px) {
+  p.w3-xlarge {
+    font-size: 26px!important;
+  }
+
+  p.w3-large {
+    font-size: 22px!important;
+  }
+
+}
+
+/* similar to iPad Air */
+@media (min-width: 820px) {
+  p.w3-xlarge {
+    font-size: 24px!important;
+  }
+
+  p.w3-large {
+    font-size: 22px!important;
+  }
+
+}
+
+/* similar to Surface Pro 7 */
+@media (min-width: 912px) {
+  p.w3-xlarge {
+    font-size: 38px!important;
+  }
+
+  p.w3-large {
+    font-size: 30px!important;
+  }
+
 }
