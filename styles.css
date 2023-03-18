@@ -108,3 +108,13 @@ html {
   }
 
 }
+
+@media (orientation: landscape) {
+   p.w3-xlarge {
+    font-size: 22px!important;
+  }
+
+  p.w3-large {
+    font-size: 18px!important;
+  }
+}
